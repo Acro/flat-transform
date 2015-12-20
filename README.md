@@ -32,7 +32,7 @@ var rules = {
     username: "username",
     phone: {
       country_code: "phone_country_code",
-      number: { strigified: "phone_number" }
+      number: { stringified: "phone_number" }
     }
   },
   phone1: "phone_number",
