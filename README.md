@@ -50,7 +50,7 @@ var transformed = flat.transform(rules, obj)
     username: "John Doe",
     phone: { 
       country_code: "+420" 
-      number: [Object] 
+      number: { stringified: "123 456 789" }
     }
   },
   phone1: "123 456 789",
