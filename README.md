@@ -11,45 +11,45 @@ This library's goal is to transform this flat relation into a structured object 
 
 ```javascript
 var obj = {
-	message: "Hello",
-	username: "John Doe",
-	user_id: 1,
-	phone_country_code: "+420",
-	phone_number: "123 456 789"
+  message: "Hello",
+  username: "John Doe",
+  user_id: 1,
+  phone_country_code: "+420",
+  phone_number: "123 456 789"
 }
 
 var rules = {
-	user: {
-		id: "user_id",
-		username: "username",
-		phone: {
-			country_code: "phone_country_code",
-			number: "phone_number"
-		}
-	},
-	phone1: "phone_number",
-	phone2: "phone_number",
-	phone3: "phone_number",
-	phone4: "phone_number"
+  user: {
+    id: "user_id",
+    username: "username",
+    phone: {
+      country_code: "phone_country_code",
+      number: "phone_number"
+    }
+  },
+  phone1: "phone_number",
+  phone2: "phone_number",
+  phone3: "phone_number",
+  phone4: "phone_number"
 }
 
 var transformed = flat.transform(rules, obj)
 
 /*
 {
-	user: { 
-		id: 1,
-		username: "John Doe",
-		phone: { 
-			country_code: "+420" 
-			number: [Object] 
-		}
-	},
-	phone1: "123 456 789",
-	phone2: "123 456 789",
-	phone3: "123 456 789",
-	phone4: "123 456 789",
-	message: "Hello"
+  user: { 
+    id: 1,
+    username: "John Doe",
+    phone: { 
+      country_code: "+420" 
+      number: [Object] 
+    }
+  },
+  phone1: "123 456 789",
+  phone2: "123 456 789",
+  phone3: "123 456 789",
+  phone4: "123 456 789",
+  message: "Hello"
 }
 */
 ```
