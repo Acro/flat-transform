@@ -5,7 +5,8 @@ var obj = {
 	username: "John Doe",
 	user_id: 1,
 	phone_country_code: "+420",
-	phone_number: "123 456 789"
+	phone_number: "123 456 789",
+	swag: true
 }
 
 var rules = {
@@ -23,6 +24,6 @@ var rules = {
 	phone4: "phone_number"
 }
 
-var transformed = flat.transform(rules, obj)
+var transformed = flat.transform(rules, obj, false)
 
-console.log(transformed)
+console.log(JSON.stringify(transformed, null, 2))
