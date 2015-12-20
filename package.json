@@ -1,0 +1,17 @@
+{
+  "name": "flat-transform",
+  "version": "1.0.0",
+  "description": "flat-transform is a small library tranforming your flat objects into rich ones using declarative rules",
+  "main": "lib/transform.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "object transformation"
+  ],
+  "author": "Ondrej Machek <acrocz@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^3.10.1"
+  }
+}
