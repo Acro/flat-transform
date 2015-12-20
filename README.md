@@ -4,6 +4,7 @@
 
 ## Use cases
 Relational databases usually return flat row objects. The goal of an arbitrary API is to present data in a structured form.
+
 This library's goal is to transform this flat relation into a structured object simply by declaring the output structure with matching property names of the original relation.
 
 ## Example
