@@ -2,6 +2,12 @@
 
 ### A small library tranforming your flat objects into rich ones using declarative rules.
 
+## Installation
+
+```javascript
+npm install flat-transform
+```
+
 ## Use cases
 Relational databases usually return flat row objects. The goal of an arbitrary API is to present data in a structured form.
 
@@ -10,6 +16,8 @@ This library's goal is to transform this flat relation into a structured object 
 ## Example
 
 ```javascript
+var flat = require("flat-transform")
+
 var obj = {
   message: "Hello",
   username: "John Doe",
@@ -53,6 +61,7 @@ var transformed = flat.transform(rules, obj)
 }
 */
 ```
+
 ## License
 
 MIT
