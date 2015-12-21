@@ -14,8 +14,12 @@ Relational databases usually return flat row objects. The goal of an arbitrary A
 This library's goal is to transform this flat relation into a structured object simply by declaring the output structure with matching property names of the original relation.
 
 ## API
-### transform(rules, original, preserve_original = false)
-Transforms original object into the new one, which is defined by rules. Optionaly it can ommit original fields in the new object by setting `preserve_original` parameter.
+
+### transform.filter(rules, original)
+Transforms original object into the new one, which is defined by rules. It ommits original fields (the ones not in the rules object) in the new object.
+
+### transform.preserve(rules, original)
+Transforms original object into the new one, which is defined by rules. It preserves original fields (the ones not in the rules object) in the new object.
 
 
 ## Example
@@ -46,7 +50,7 @@ var rules = {
   phone4: "phone_number"
 }
 
-var transformed = flat.transform(rules, obj)
+var transformed = flat.transform.filter(rules, obj)
 
 /*
 {
@@ -61,8 +65,7 @@ var transformed = flat.transform(rules, obj)
   phone1: "123 456 789",
   phone2: "123 456 789",
   phone3: "123 456 789",
-  phone4: "123 456 789",
-  message: "Hello"
+  phone4: "123 456 789"
 }
 */
 ```
