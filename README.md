@@ -13,6 +13,11 @@ Relational databases usually return flat row objects. The goal of an arbitrary A
 
 This library's goal is to transform this flat relation into a structured object simply by declaring the output structure with matching property names of the original relation.
 
+## API
+### transform(rules, original, preserve_original = false)
+Transforms original object into the new one, which is defined by rules. Optionaly it can ommit original fields in the new object by setting `preserve_original` parameter.
+
+
 ## Example
 
 ```javascript

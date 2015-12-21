@@ -5,7 +5,8 @@ var obj = {
 	username: "John Doe",
 	user_id: 1,
 	phone_country_code: "+420",
-	phone_number: "123 456 789"
+	phone_number: "123 456 789",
+	swag: true
 }
 
 var rules = {
@@ -23,6 +24,10 @@ var rules = {
 	phone4: "phone_number"
 }
 
-var transformed = flat.transform(rules, obj)
+console.log('\033[0;31mFiltered attributes\033[0m');
+var transformed = flat.transform.filter(rules, obj)
+console.log(JSON.stringify(transformed, null, 2))
 
-console.log(transformed)
+console.log('\n\033[0;31mPreserved attributes\033[0m');
+var transformed = flat.transform.preserve(rules, obj)
+console.log(JSON.stringify(transformed, null, 2).replace(/("swag": true)/, "\033[0;32m$1\033[0m"))
