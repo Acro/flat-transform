@@ -24,6 +24,10 @@ var rules = {
 	phone4: "phone_number"
 }
 
-var transformed = flat.transform(rules, obj, false)
-
+console.log('\033[0;31mFiltered attributes\033[0m');
+var transformed = flat.transform.filter(rules, obj)
 console.log(JSON.stringify(transformed, null, 2))
+
+console.log('\n\033[0;31mPreserved attributes\033[0m');
+var transformed = flat.transform.preserve(rules, obj)
+console.log(JSON.stringify(transformed, null, 2).replace(/("swag": true)/, "\033[0;32m$1\033[0m"))
