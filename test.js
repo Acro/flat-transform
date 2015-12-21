@@ -30,4 +30,4 @@ console.log(JSON.stringify(transformed, null, 2))
 
 console.log('\n\033[0;31mPreserved attributes\033[0m');
 var transformed = flat.transform.preserve(rules, obj)
-console.log(JSON.stringify(transformed, null, 2).replace(/("swag": true)/, "\033[0;32m$1\033[0m")).replace(/("message": "Hello")/, "\033[0;32m$1\033[0m"))
+console.log(JSON.stringify(transformed, null, 2).replace(/("swag": true)/, "\033[0;32m$1\033[0m").replace(/("message": "Hello")/, "\033[0;32m$1\033[0m"))
