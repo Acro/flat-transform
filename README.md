@@ -70,6 +70,27 @@ var transformed = flat.transform.filter(rules, obj)
 */
 ```
 
+var transformed = flat.transform.preserve(rules, obj)
+
+/*
+{
+  user: { 
+    id: 1,
+    username: "John Doe",
+    phone: { 
+      country_code: "+420" 
+      number: { stringified: "123 456 789" }
+    }
+  },
+  phone1: "123 456 789",
+  phone2: "123 456 789",
+  phone3: "123 456 789",
+  phone4: "123 456 789",
+  message: "Hello"
+}
+*/
+```
+
 ## License
 
 MIT
