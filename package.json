@@ -13,7 +13,10 @@
     "json",
     "dot-object",
     "object",
-    "unflatten"
+    "unflatten",
+    "flat",
+    "hierarchy",
+    "tree"
   ],
   "author": "Ondrej Machek <acrocz@gmail.com>",
   "license": "MIT",
