@@ -68,7 +68,6 @@ var transformed = flat.transform.filter(rules, obj)
   phone4: "123 456 789"
 }
 */
-```
 
 var transformed = flat.transform.preserve(rules, obj)
 
