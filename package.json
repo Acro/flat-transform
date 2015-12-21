@@ -7,7 +7,13 @@
     "test": "node test/transform.js"
   },
   "keywords": [
-    "object transformation"
+    "object transformation",
+    "transform",
+    "filter",
+    "json",
+    "dot-object",
+    "object",
+    "unflatten"
   ],
   "author": "Ondrej Machek <acrocz@gmail.com>",
   "license": "MIT",
