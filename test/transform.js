@@ -1,4 +1,4 @@
-var flat = require("./lib/transform.js")
+var flat = require("../lib/transform.js")
 
 var obj = {
 	message: "Hello",
