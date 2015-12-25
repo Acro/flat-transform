@@ -5,7 +5,7 @@
 ## Installation
 
 ```javascript
-npm install flat-transform
+npm install flat-transform --save
 ```
 
 ## Use cases
