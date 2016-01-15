@@ -34,7 +34,8 @@ var obj = {
   username: "John Doe",
   user_id: 1,
   phone_country_code: "+420",
-  phone_number: "123 456 789"
+  phone_number: "123 456 789",
+  swag: true
 }
 
 var rules = {
