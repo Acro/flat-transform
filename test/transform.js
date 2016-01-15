@@ -16,7 +16,8 @@ var rules = {
 		phone: {
 			country_code: "phone_country_code",
 			number: { stringified: "phone_number" }
-		}
+		},
+		wot: function (user_id, swag) { return user_id && swag ? "such swag" : ":(" }
 	},
 	phone1: "phone_number",
 	phone2: "phone_number",

@@ -13,6 +13,8 @@ Relational databases usually return flat row objects. The goal of an arbitrary A
 
 This library's goal is to transform this flat relation into a structured object simply by declaring the output structure with matching property names of the original relation.
 
+Function can also be used for creating new properties. The arguments of the function should correspond with the properties of the original object.
+
 ## API
 
 ### transform.filter(rules, original)
@@ -41,8 +43,9 @@ var rules = {
     username: "username",
     phone: {
       country_code: "phone_country_code",
-      number: { stringified: "phone_number" }
-    }
+      number: { stringified: "phone_number" },
+    },
+    wot: function (user_id, swag) { return user_id && swag ? "such swag" : ":(" }
   },
   phone1: "phone_number",
   phone2: "phone_number",
@@ -60,7 +63,8 @@ var transformed = flat.transform.filter(rules, obj)
     phone: { 
       country_code: "+420" 
       number: { stringified: "123 456 789" }
-    }
+    },
+    wot: "such swag"
   },
   phone1: "123 456 789",
   phone2: "123 456 789",
@@ -79,7 +83,8 @@ var transformed = flat.transform.preserve(rules, obj)
     phone: { 
       country_code: "+420" 
       number: { stringified: "123 456 789" }
-    }
+    },
+    wot: "such swag"
   },
   phone1: "123 456 789",
   phone2: "123 456 789",
