@@ -67,6 +67,8 @@ var rules = {
   }
 }
 
+var output = transform(rules, object)
+
 // { user: { name: "John Doe" } }
 ```
 
@@ -82,6 +84,8 @@ var object = { username: "John Doe" }
 var rules = {
   is_john_doe: function (username) { return username == "John Doe" ? true : false }
 }
+
+var output = transform(rules, object)
 
 // { is_john_doe: true }
 ```
@@ -107,6 +111,7 @@ var rules = {
 var exceptions = [ function (email) { return email == null ? "email" : null } ]
 
 var output = transform(rules, exceptions, object)
+
 // { 
 //   user: {
 //     username: "John Doe"  
@@ -133,7 +138,8 @@ var rules = {
 }
 
 var output = objects.map(transform.bind(this, rules))
-// var objects = [
+
+// [
 //   { is_john_doe: true },
 //   { is_john_doe: false },
 //   { is_john_doe: false }
