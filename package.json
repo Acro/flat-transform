@@ -1,6 +1,6 @@
 {
   "name": "flat-transform",
-  "version": "4.1.0",
+  "version": "4.1.1",
   "description": "flat-transform is a small library tranforming your flat objects into rich ones using declarative rules",
   "main": "lib/transform.js",
   "scripts": {
