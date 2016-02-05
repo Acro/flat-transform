@@ -124,7 +124,7 @@ Each `Function` in the `exceptions` array is evaluated and arguments of the func
 
 ## Applying the transformation on the array of objects
 
-You can use `map` to apply the transformation function. The `rules` (and `exceptions` is needed) can be bound by the `bind` function (partial application).
+You can use `map` to apply the transformation function. The `rules` (and `exceptions` if needed) can be bound by the `bind` function (partial application).
 
 ```javascript
 var objects = [
