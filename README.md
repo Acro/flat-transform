@@ -133,11 +133,11 @@ var rules = {
 }
 
 var output = objects.map(transform.bind(this, rules))
-var objects = [
-  { is_john_doe: true },
-  { is_john_doe: false },
-  { is_john_doe: false }
-]
+// var objects = [
+//   { is_john_doe: true },
+//   { is_john_doe: false },
+//   { is_john_doe: false }
+// ]
 ```
 
 ## Examples
