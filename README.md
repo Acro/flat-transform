@@ -96,7 +96,7 @@ Any `Function` value of the `rules` object is evaluated and arguments of the fun
 Often, the existence of certain keys on the outputting object may depend on the content of the original `object`.
 
 ```javascript
-{
+var object = {
   username: "John Doe",
   email: null
 }
