@@ -1,6 +1,6 @@
 # flat-transform
 
-### A small library tranforming your flat objects into rich ones using declarative rules.
+### A small library transforming your flat objects into rich ones using declarative rules.
 
 ```javascript
 var transform = require("flat-transform").transform.filter
