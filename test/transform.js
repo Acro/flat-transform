@@ -8,7 +8,10 @@ var obj = {
 	retweeted_status_id: null,
 	phone_country_code: "+420",
 	phone_number: "123 456 789",
-	swag: true
+	swag: true,
+	nested: {
+		omg: "wtf"
+	}
 }
 
 var rules = {
@@ -27,7 +30,8 @@ var rules = {
 	phone1: "phone_number",
 	phone2: "phone_number",
 	phone3: "phone_number",
-	phone4: "phone_number"
+	phone4: "phone_number",
+	omg: "nested.omg"
 }
 
 var blacklist_exceptions = [ function (is_retweeted) { return !is_retweeted ? "retweeted_status" : null } ]
