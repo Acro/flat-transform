@@ -21,7 +21,7 @@
   "author": "Ondrej Machek <acrocz@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "lodash": "^3.10.1"
+    "lodash": "^4.17.11"
   },
   "repository": {
     "type": "git",
